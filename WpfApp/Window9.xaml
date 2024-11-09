@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp.Window9"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Window9" Height="450" Width="800">
+    <Grid>
+        <DatePicker
+            SelectedDate="1-November-2024"
+            SelectedDateFormat="Long"
+            SelectedDateChanged="DatePicker_OnSelectedDateChanged">
+            <DatePicker.BlackoutDates>
+                <CalendarDateRange Start="2-November-2024" End="5-December-2024"></CalendarDateRange>
+            </DatePicker.BlackoutDates>
+        </DatePicker>
+    </Grid>
+</Window>

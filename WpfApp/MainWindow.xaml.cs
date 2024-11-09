@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Runtime.InteropServices;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,5 +20,12 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        MyButton.FontSize = 50;
+        MyButton.Content = "Hello Celal";
+    }
+
+    string GetFrameworkDescription()
+    {
+        return RuntimeInformation.FrameworkDescription;
     }
 }

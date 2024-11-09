@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Window6" Height="450" Width="800">
+    <StackPanel>
+        <Label>Toppings</Label>
+        <CheckBox x:Name="cbParent" IsThreeState="True" Checked="CbParent_Check" Unchecked="CbParent_Check"></CheckBox>
+
+        <CheckBox
+            x:Name="cbCheese"
+            Checked="CbCheese_OnChecked"
+            Unchecked="CbCheese_OnUnchecked">
+            Extra Cheese
+        </CheckBox>
+        <CheckBox x:Name="cbTuna">Tuna</CheckBox>
+        <CheckBox x:Name="cbHaram">H(ar)am</CheckBox>
+        <CheckBox x:Name="cbPepp">Pepperoni</CheckBox>
+    </StackPanel>
+</Window>

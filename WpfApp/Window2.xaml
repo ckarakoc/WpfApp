@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Window2" Height="250" Width="300">
+    <StackPanel>
+        <Label Margin="16,16,16,0" BorderThickness="2" BorderBrush="Aquamarine">
+            <StackPanel>
+                <Image Width="60"
+                       Source="https://www.ckarakoc.nl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fck.e1059da6.jpg&amp;w=256&amp;q=75">
+                </Image>
+                <AccessText Text="Message"></AccessText>
+            </StackPanel>
+        </Label>
+        <TextBox
+            Margin="10"
+            FontSize="32">
+            Hello World
+        </TextBox>
+    </StackPanel>
+</Window>

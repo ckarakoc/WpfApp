@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Window1" Height="150" Width="200">
+    <StackPanel x:Name="MyStackPanel">
+        <TextBlock x:Name="MyTextBlock">
+            <Bold>Hello World!</Bold> And hello <Italic>you</Italic>
+            <LineBreak />
+            Go to <Hyperlink RequestNavigate="Hyperlink_OnRequestNavigate" NavigateUri="https://www.google.com">Google</Hyperlink>
+        </TextBlock>
+        
+        <TextBlock TextTrimming="CharacterEllipsis" TextWrapping="WrapWithOverflow">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <Span Foreground="Aqua">Proin</Span> id nisl quis nunc dignissim bibendum sit amet rutrum tellus. Aliquam nec commodo magna. Suspendisse id diam ut turpis commodo efficitur. Nulla a consectetur est. Sed feugiat odio nec lectus sollicitudin tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed euismod nulla a pretium cursus. Praesent luctus felis ut interdum vehicula. Phasellus vestibulum ligula nec est vestibulum, id ornare nunc convallis. Vestibulum sollicitudin hendrerit ex vel vehicula. Nam laoreet nisi in augue blandit sagittis.
+        </TextBlock>
+    </StackPanel>
+</Window>

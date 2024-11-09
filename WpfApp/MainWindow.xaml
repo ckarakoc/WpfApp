@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Window Title" Height="450" Width="800">
+    <StackPanel>
+        <Label x:Name="MyLabel">Hello Celal</Label>
+        <Label Name="Label" Content="" />
+        <Button Content="Welcome to the course">
+        </Button>
+        <Button 
+            x:Name="MyButton"
+            Content="Hello World"
+            ></Button>
+    </StackPanel>
 </Window>

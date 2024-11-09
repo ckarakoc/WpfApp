@@ -8,4 +8,9 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Images\Homer_Simpson_2006.png" />
+      <Resource Include="Images\Homer_Simpson_2006.png" />
+    </ItemGroup>
+
 </Project>
