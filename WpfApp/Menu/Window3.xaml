@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp.Menu.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp.Menu"
+        mc:Ignorable="d"
+        Title="Window3" Height="400" Width="400">
+    <StackPanel>
+        <TextBox x:Name="myTB" Height="200">
+            <TextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Name="miBold" Header="Bold" Click="MiBold_OnClick"></MenuItem>
+                    <MenuItem Name="miItalic" Header="Italic" Click="MiItalic_OnClick"></MenuItem>
+                    <MenuItem Name="miUnderline" Header="Underline" Click="MiUnderline_OnClick"></MenuItem>
+                </ContextMenu>
+            </TextBox.ContextMenu>
+        </TextBox>
+    </StackPanel>
+</Window>

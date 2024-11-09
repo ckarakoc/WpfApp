@@ -14,14 +14,18 @@ public partial class CatYearsUI : Window
     public CatYearsUI()
     {
         InitializeComponent();
-        
-        string projectRoot = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
-        
-        Image backgroundImage = new Image()
+
+        var projectRoot = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory)?.Parent?.Parent?.Parent?.FullName;
+
+        Image? backgroundImage = null;
+        if (projectRoot != null)
         {
-            Source = new BitmapImage(new Uri(System.IO.Path.Combine(projectRoot, "Images", "Cat.jpg"),
-                UriKind.RelativeOrAbsolute))
-        };
+            backgroundImage = new Image()
+            {
+                Source = new BitmapImage(new Uri(System.IO.Path.Combine(projectRoot, "Images", "Cat.jpg"),
+                    UriKind.RelativeOrAbsolute))
+            };
+        }
 
         ResultTextBlock = new TextBlock()
         {
@@ -48,7 +52,7 @@ public partial class CatYearsUI : Window
         StackPanel mainStackPanel = new StackPanel();
         mainStackPanel.Children.Add(horStackPanel);
         mainStackPanel.Children.Add(ResultTextBlock);
-        mainStackPanel.Children.Add(backgroundImage);
+        if (backgroundImage != null) mainStackPanel.Children.Add(backgroundImage);
 
         Cat.Content = mainStackPanel;
     }

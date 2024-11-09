@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp.Menu.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp.Menu"
+        mc:Ignorable="d"
+        Title="Window4" Height="300" Width="300">
+    <DockPanel LastChildFill="False">
+        <Button DockPanel.Dock="Top" Click="ButtonBase_OnClick">
+            Increase 
+        </Button>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem x:Name="sbItem">
+                Loading...
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <ProgressBar x:Name="myPB" Width="100" Height="15" Value="10"></ProgressBar>
+            </StatusBarItem>
+        </StatusBar>
+    </DockPanel>
+</Window>
