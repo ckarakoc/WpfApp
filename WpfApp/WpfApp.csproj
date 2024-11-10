@@ -13,6 +13,22 @@
       <Resource Include="Images\Homer_Simpson_2006.png" />
       <None Remove="Images\Cat.jpg" />
       <Resource Include="Images\Cat.jpg" />
+      <None Remove="Icons\comment.png" />
+      <Resource Include="Icons\comment.png" />
+      <None Remove="Icons\bookmark.png" />
+      <Resource Include="Icons\bookmark.png" />
+      <None Remove="Icons\like.png" />
+      <Resource Include="Icons\like.png" />
+      <None Remove="Icons\nolike.png" />
+      <Resource Include="Icons\nolike.png" />
+      <None Remove="Icons\post1.jpg" />
+      <Resource Include="Icons\post1.jpg" />
+      <None Remove="Icons\post2.jpg" />
+      <Resource Include="Icons\post2.jpg" />
+      <None Remove="Icons\post3.jpg" />
+      <Resource Include="Icons\post3.jpg" />
+      <None Remove="Icons\send.png" />
+      <Resource Include="Icons\send.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -70,10 +86,6 @@
 
     <ItemGroup>
       <PackageReference Include="System.Speech" Version="8.0.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="MVC\" />
     </ItemGroup>
 
 </Project>
