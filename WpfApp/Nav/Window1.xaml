@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp.Nav.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp.Nav"
+        mc:Ignorable="d"
+        Title="Window1" Height="400" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="30" Click="BackButton_OnClick">&lt;</Button>
+            <Button Width="100" Click="ButtonBase_OnClick1">Page 1</Button>
+            <Button Width="100" Click="ButtonBase_OnClick2">Page 2</Button>
+            <Button Width="100" Click="ButtonBase_OnClick3">Page 3</Button>
+            <Button Width="30" Click="ForwardButton_OnClick">&gt;</Button>
+        </StackPanel>
+        <Frame
+            x:Name="MainFrame"
+            Grid.Row="1"
+            NavigationUIVisibility="Hidden">
+            
+        </Frame>
+    </Grid>
+</Window>
