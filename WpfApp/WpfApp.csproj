@@ -68,4 +68,12 @@
       </Page>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="System.Speech" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="MVC\" />
+    </ItemGroup>
+
 </Project>
